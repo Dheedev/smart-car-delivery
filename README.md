@@ -13,6 +13,7 @@ This project involves building an Arduino-based auto-driving car that utilizes u
 4. If all sensors indicate a distance below the threshold, the car stops and emits a continuous beeping sound.
 
 5. If the front sensor detects an obstacle, the car's response depends on the readings of the left and right sensors.
+
    - If the left sensor detects an obstacle while the right sensor does not, the car turns left.
    - If the right sensor detects an obstacle while the left sensor does not, the car turns right.
    - If both the left and right sensors detect obstacles, the car stops and emits a continuous beeping sound.
@@ -26,6 +27,7 @@ This project involves building an Arduino-based auto-driving car that utilizes u
 To recreate this project, follow these steps:
 
 1. Gather the required components:
+
    - Arduino board (e.g., Arduino Uno)
    - Ultrasonic sensors (3x)
    - Servo motor
@@ -37,6 +39,7 @@ To recreate this project, follow these steps:
    - Power source (e.g., battery pack)
 
 2. Set up the hardware:
+
    - Connect the ultrasonic sensors to the appropriate trigger and echo pins on the Arduino.
    - Connect the servo motor to the designated pin for steering.
    - Connect the motors for movement control to the corresponding motor pins.
@@ -44,6 +47,7 @@ To recreate this project, follow these steps:
    - Connect the buzzer to a digital output pin.
 
 3. Install the required libraries:
+
    - Install the "Servo" library for servo motor control.
    - Install the "NewPing" library for ultrasonic sensor measurements.
 
@@ -65,25 +69,25 @@ Remember to ensure proper safety precautions while working with the hardware and
 
 ## Circuit
 
-|  Arduino pins  | Electronic component |
-|----------------|:--------------------:|
-| D2  |  Push Button  |
-| D4  |  Ultrasonic Sensor (Front Trigger) |
-| D5  |  Ultrasonic Sensor (Left Trigger) |
-| D6  |  Ultrasonic Sensor (Left Echo) |
-| D7  |  Ultrasonic Sensor (Right Trigger) |
-| D8  |  Ultrasonic Sensor (Right Echo) |
-| D9  |  Motor 1 |
-| D10 |  Motor 2 |
-| D11 |  Motor 3 |
-| D12 |  Motor 4 |
-| D13 |  Servo Motor |
-| A0  |  Buzzer |
-
+| Arduino pins |       Electronic component        |
+| ------------ | :-------------------------------: |
+| D2           |            Push Button            |
+| D4           | Ultrasonic Sensor (Front Trigger) |
+| D5           | Ultrasonic Sensor (Left Trigger)  |
+| D6           |   Ultrasonic Sensor (Left Echo)   |
+| D7           | Ultrasonic Sensor (Right Trigger) |
+| D8           |  Ultrasonic Sensor (Right Echo)   |
+| D9           |              Motor 1              |
+| D10          |              Motor 2              |
+| D11          |              Motor 3              |
+| D12          |              Motor 4              |
+| D13          |            Servo Motor            |
+| A0           |              Buzzer               |
 
 ## Programming languages used
+
 <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/favicon.ico" alt="blender" width="40" height="40"/> </a>
 
-
 ## Developer
-*  [abhineetraj1](http://github.com/abhineetraj1)
+
+- [Dheedev](http://github.com/Dheedev)
