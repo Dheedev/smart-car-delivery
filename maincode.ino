@@ -2,13 +2,14 @@
 #include <NewPing.h>
 
 // Pin Definitions
-// ... (Same as before)
+
 
 // Constants
 #define SENSOR_THRESHOLD 20 // Distance in centimeters
 #define TURN_DURATION 1000
 #define BEEP_DURATION 200
 #define MAX_WAITING_TIME 300000 // 5 minutes in milliseconds
+#define CAR_DESTINATION 
 
 // Variables
 Servo servo;
@@ -25,7 +26,8 @@ void setup() {
 }
 
 void loop() {
-  // ... (Same as before)
+  // ... (Same as before) 
+  // i am fixing alot now
 
   // Check if the car is at the departure destination
   if (isStarted && !isDepartureReached) {
